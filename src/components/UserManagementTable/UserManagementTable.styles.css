@@ -1,0 +1,137 @@
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5vw;
+    margin-bottom:1rem;
+  }
+  
+  #table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 72%;
+  }
+  #table thead{
+     background-color: #dddddd;
+  }
+  caption {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+  }
+  
+  #table td,
+  #table th {
+    border: 1px solid rgb(161, 158, 158);
+    padding: 12px;
+    text-align: start;
+    font-size: 16   px;
+    font-weight: 500;
+  }
+  #table th{
+    padding:14px;
+    text-transform: capitalize;
+  }
+  
+ 
+  #table input {
+    width:90%;
+  }
+  .column-header{
+    width:18%
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  tr:hover{
+    background-color:#dddddd;
+  }
+
+.search-input{
+   text-transform: capitalize;
+}
+
+
+@media screen and (max-width:1090px) {
+  #table {
+    width: 90vw;
+    
+  }
+  #table td, #table th{
+    padding:10px;
+    font-size:14px;
+  }
+  
+}
+
+  @media screen and (max-width: 860px) {
+    #table {
+      width: 98vw;
+    }
+    #table thead{
+      background: none !important;
+    }
+    #table th{
+      display: none;
+    }
+  #table th, #table td{
+    border: 1px solid #ddd;
+  }
+
+    #table tbody,
+    #table tr,
+    #table td {
+      display: block;
+    }
+    #table tr {
+      margin-bottom: 5px;
+    }
+    #table tr,
+    tbody tr ,
+    #table tr:nth-child(even)
+    ,#tbody tr:hover {
+      background-color: black !important;
+      color: white;
+    }
+    #table tbody tr td {
+      text-align: right;
+      position: relative;
+      padding-left: 45%;
+      font-size: 14px;
+      min-height: 30px;
+    }
+    #table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 5px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    #table th{
+      width:100% !important;
+    }
+    .company-link{
+      color: white;
+    }
+    .action-group{
+      width: auto;
+      height: 50px;
+      display: flex !important;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .actions-container{
+      gap:6px;
+    }
+    .delete{
+      position: relative;
+      top:0;
+      left:0;
+    }
+    .edit{
+      color:lightgreen;
+    }
+   
+  }
+   

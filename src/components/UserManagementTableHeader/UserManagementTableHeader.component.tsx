@@ -1,5 +1,5 @@
 import { Fragment,FC } from "react";
-import { useAppSelector, useAppDispatch } from "../../redux/hooks";
+import { useAppSelector, useAppDispatch} from "../../redux/hook"
 import SearchInput from "../SearchInput/SearchInput.component";
 import { handleSearchInputChange } from "../../redux/searchInput/searchInput.reducer";
 
